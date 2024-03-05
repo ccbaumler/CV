@@ -2,7 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-CV.aux
-CV.bcf
-CV.out
-CV.run.xml
+CV.Rproj
