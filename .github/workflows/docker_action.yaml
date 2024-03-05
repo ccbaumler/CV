@@ -4,7 +4,8 @@
 #    https://stackoverflow.com/a/64051330/8302386
 #................................................
 
-
+# May be modified with cron job to regularly update but I did not see a purpose
+# for my non-dynamic rmd file
 on:
   push:
     branches: main
@@ -15,6 +16,7 @@ jobs:
   build:
     name: create the curriculum vitae pdf file
     runs-on: ubuntu-latest
+# Need to docker pull and tag to create your own docker image
     container:
       image: mlampros/mycvitae:rstudiodev
     steps:
@@ -31,11 +33,11 @@ jobs:
        run: |
          Rscript -e "print(getwd())"
          Rscript -e "rmarkdown::render(input = file.path(getwd(), 'CV', 'CV.Rmd'), params = list(work_dir = getwd()))"
-# https://github.com/actions/checkout/pull/1184
+# If this commit fails, try -> https://github.com/actions/checkout/pull/1184
      - name: Commit files
        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
           git add --all
           git commit -am "add the CV.pdf file to the 'CV' directory of the repository"
           git push
