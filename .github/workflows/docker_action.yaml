@@ -53,6 +53,13 @@ jobs:
          git push origin $TAG_NAME
          # You may want to create a release as well, based on your needs
          # Example command to create a release:
-         curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "{\"tag_name\":\"$TAG_NAME\",\"name\":\"$TAG_NAME\",\"body\":\"Release $TAG_NAME\"}" https://api.github.com/repos/ccbaumler/CV/releases
+         echo "====> CLEANING LATEST RELEASE <===="
+         LATEST_RELEASE_ID=$(curl -s -X GET --url https://api.github.com/repos/$1/releases/tags/latest --header "authorization: token ${GITHUB_TOKEN}" | jq -r ".id")
+         if [ ! -z "${LATEST_RELEASE_ID}" ]; then
+           echo "-> DELETE latest tag"
+           curl -sS -X DELETE --url https://api.github.com/repos/$1/git/refs/tags/latest --header "authorization: token $2" 
+           echo "-> DELETE latest release $LATEST_RELEASE_ID"
+           curl -sS -X DELETE --url https://api.github.com/repos/$1/releases/$LATEST_RELEASE_ID --header "authorization: token $2" 
+         fi
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
