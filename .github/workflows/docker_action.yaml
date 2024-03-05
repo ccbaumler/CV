@@ -46,3 +46,13 @@ jobs:
        with:
          name: CV
          path: CV/
+     - name: Create Tag and Release
+       run: |
+         TAG_NAME="v$(date +%m-%d-%Y.%H.%M)"
+         git tag $TAG_NAME
+         git push origin $TAG_NAME
+         # You may want to create a release as well, based on your needs
+         # Example command to create a release:
+         curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "{\"tag_name\":\"$TAG_NAME\",\"name\":\"$TAG_NAME\",\"body\":\"Release $TAG_NAME\"}" https://api.github.com/repos/ccbaumler/CV/releases
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
