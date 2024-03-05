@@ -1,0 +1,166 @@
+---
+name: Colton
+surname: Baumler
+position: "Graduate Student Candidate"
+pronouns: He/Him
+address: "Data Intensive Biology lab of the University of California, Davis"
+phone: +1 612 701 4858
+www: ""
+email: "ccbaumler@ucdavis.edu"
+twitter: ""
+github: ccbaumler
+linkedin: colton-baumler
+orcid: 0000-0002-5926-7792
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "9e2e2e"
+aboutme: "I am deeply engaged in bioinformatics and mentorship. I excitedly wrangle data, craft software, and create dynamic mentorship opportunities."
+docname: CV
+output:
+  vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+# Go to https://yihui.org/tinytex/r/#debugging
+# if you experience any latex erros
+
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+
+source(file = here("CV", "data.r"))
+
+```
+
+# Research Interests
+
+ * Bioinformatically exploring the world of big, public data in new and interesting ways.
+ * Combining scientific domains to create a pleasant end-user experience. 
+
+# Education
+
+```{r EDUCATION}
+
+edu %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} - {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+# Research Experience
+
+```{r EXPERIENCE}
+
+exp %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+# Professional Service
+
+```{r SERVICE}
+
+service %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = glue::glue("{startYear} - {endYear}{endMonth}",.na = ""),
+    where = where
+  )
+
+```
+
+# Community Involvement
+
+```{r COMMUNITY}
+
+community %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = glue::glue("{startYear} - {endYear}{endMonth}",.na = ""),
+    where = where
+  )
+
+```
+
+# Funding and Grants
+
+```{r FUNDS}
+
+funds %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = glue::glue("{startYear} - {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+# Honors and Awards
+
+```{r HONORS}
+
+honors %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = glue::glue("{month} {year}",.na = ""),
+    where = where
+  )
+
+```
+
+# Skills
+
+```{r SKILLS}
+
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+
+```
+
+# Presentations
+
+```{r PRESENTS}
+
+presents %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
