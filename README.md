@@ -14,4 +14,5 @@ This was inspired by the work at:
 1. https://github.com/mitchelloharawild/CV
 2. https://github.com/tallguyjenks/CV
 3. https://github.com/mlampros/My.CVitae
-4. https://github.com/nstrayer/datadrivencv
+4. https://github.com/olivierodo/Awesome-CV-action
+5. https://github.com/nstrayer/datadrivencv
