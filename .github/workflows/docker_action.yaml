@@ -46,10 +46,10 @@ jobs:
        with:
          name: CV
          path: CV/
-     - name: Setup Node.js
-       uses: actions/setup-node@v4
-       with:
-         node-version: '20'
+     - name: Install jq
+       run: |
+         sudo apt-get update
+         sudo apt-get install -y jq
      - name: Create Tag and Release
        env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
