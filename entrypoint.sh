@@ -37,7 +37,7 @@ main() {
 
   if usesBoolean "${INPUT_LATEST_TAG}" && usesBoolean "${IS_MASTER}"; then
     cleanLatest $GITHUB_REPOSITORY $GITHUB_TOKEN
-    createRelease $GITHUB_REPOSITORY $GITHUB_TOKEN "latest" $OUTPUT_FILE
+    createRelease $GITHUB_REPOSITORY $GITHUB_TOKEN "latest" $INPUT_FILE_NAME
   fi
 
    echo "::set-output name=TAG_NAME::${TAG_NAME}" 
@@ -77,7 +77,7 @@ createRelease() {
 
   echo "====> UPLOAD ASSET TO RELEASE $RELEASE_ID ($3)"
   UPLOAD_URL="https://uploads.github.com/repos/$1/releases/$RELEASE_ID/assets?name=$4"
-  OUTPUT_UPLOAD=$(curl -sS -X POST --header "authorization: token $2" --header "content-type: application/pdf" --url $UPLOAD_URL -F "data=@$4")
+  OUTPUT_UPLOAD=$(curl -sS -X POST --header "authorization: token $2" --header 'content-type: application/pdf' --url $UPLOAD_URL -F "data=@$4")
   responseHandler "$OUTPUT_UPLOAD" 
 
   ASSET_URL="https://github.com/$1/releases/download/$3/$4"
