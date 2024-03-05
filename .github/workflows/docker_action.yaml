@@ -16,7 +16,7 @@ jobs:
     name: create the curriculum vitae pdf file
     runs-on: ubuntu-latest
     container:
-      image: ccbaumler/mycvitae:rstudiodev
+      image: mlampros/mycvitae:rstudiodev
     steps:
      - name: Set up Git repository
        uses: actions/checkout@v2

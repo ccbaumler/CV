@@ -6,7 +6,7 @@ edu <- tribble(
   "Concordia University, St. Paul", 2014, NA, 2018, "Bachelors of Arts & Science", "Minnesota, USA", "Honors in Research",
   "Concordia University, St. Paul", 2014, NA, 2018, "Bachelors of Arts & Science", "Minnesota, USA", "Minor in Mathematics",
   "Concordia University, St. Paul", 2014, NA, 2018, "Bachelors of Arts & Science", "Minnesota, USA", "Magna Cum Laude",
-  "Hennepin Technical College", 2008, NA, 2010, "Associate of Applied Science in Automotive Mechanics", "Minnesota, USA", NA,
+  "Hennepin Technical College", 2008, NA, 2010, "Associate of Applied Science in Automotive Mechanics", "Minnesota, USA", "Academic Excellence",
 )
 
 exp <- tribble(
@@ -26,7 +26,7 @@ service <- tribble(
   ~area, ~accomplishment, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
   "Scholarly literature workshop Author and Lead instructor", "DataLab", 2024, "Present", NA, "University of California, Davis", NA,
   "Admissions Committee Member", "PREP@UCD", 2023, "Present", NA, "University of California, Davis", NA,
-  "Recruitment Colloqium Mentor", "BMCDB Graduate Group", 2020, "Present", NA, "University of California, Davis", NA,
+  "Recruitment Colloquium Mentor", "BMCDB Graduate Group", 2020, "Present", NA, "University of California, Davis", NA,
   "Biology Graduate Admissions Pathways Mentor", "BioGAP", 2020, NA, 2021, "University of California, Davis", NA,
   "NSF GRFP Grant Writing Working Group Creator and Lead Instructor", "Rogers Lab", 2020, NA, 2021, "University of California, Davis", NA,
 )
