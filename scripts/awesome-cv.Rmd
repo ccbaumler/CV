@@ -14,7 +14,7 @@ orcid: 0000-0002-5926-7792
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "9e2e2e"
 aboutme: "I am deeply engaged in bioinformatics and mentorship. I excitedly wrangle data, craft software, and create dynamic mentorship opportunities."
-docname: CV
+docname: awesomecv
 output:
   vitae::awesomecv
 ---
@@ -39,7 +39,7 @@ packages <- c('vitae'     # The CV's LaTeX Template
 
 xfun::pkg_attach2(packages, message = FALSE)
 
-source(file = here("CV", "data.r"))
+source(file = here("data", "data.r"))
 
 ```
 

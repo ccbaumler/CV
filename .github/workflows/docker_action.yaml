@@ -33,6 +33,7 @@ jobs:
        run: |
          Rscript -e "print(getwd())"
          Rscript -e "rmarkdown::render(input = file.path(getwd(), 'CV', 'CV.Rmd'), params = list(work_dir = getwd()))"
+         mv ./scripts/awesome-cv.pdf ./docs/awesome-cv.pdf
 # If this commit fails, try -> https://github.com/actions/checkout/pull/1184
      - name: Commit files
        run: |
@@ -44,8 +45,8 @@ jobs:
      - name: Upload pdf file
        uses: actions/upload-artifact@v1
        with:
-         name: CV
-         path: CV/
+         name: awesome-cv
+         path: docs/
      - name: Install jq
        run: |
          sudo apt-get update
@@ -53,7 +54,7 @@ jobs:
      - name: Create Tag and Release
        env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        INPUT_FILE_NAME: ./CV/CV.pdf
+        INPUT_FILE_NAME: ./docs/awesome-cv.pdf
        run: |
           bash ./entrypoint.sh
 
