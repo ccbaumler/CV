@@ -53,7 +53,7 @@ jobs:
      - name: Create Tag and Release
        env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        INPUT_FILE_NAME: CV.pdf
+        INPUT_FILE_NAME: ./CV/CV.pdf
        run: |
           bash ./entrypoint.sh
 
