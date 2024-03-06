@@ -32,7 +32,7 @@ jobs:
      - name: render the curriculum vitae
        run: |
          Rscript -e "print(getwd())"
-         Rscript -e "rmarkdown::render(input = file.path(getwd(), 'CV', 'CV.Rmd'), params = list(work_dir = getwd()))"
+         Rscript -e "rmarkdown::render(input = file.path(getwd(), 'scripts', 'awesome-cv.Rmd'), params = list(work_dir = getwd()))"
          mv ./scripts/awesome-cv.pdf ./docs/awesome-cv.pdf
 # If this commit fails, try -> https://github.com/actions/checkout/pull/1184
      - name: Commit files
@@ -40,7 +40,7 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add --all
-          git commit -am "add the CV.pdf file to the 'CV' directory of the repository"
+          git commit -am "add the CV pdf files to the 'docs' directory of the repository"
           git push
      - name: Upload pdf file
        uses: actions/upload-artifact@v1
