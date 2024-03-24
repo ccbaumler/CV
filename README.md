@@ -1,5 +1,11 @@
 # My Data Driven CV written with R, YAML, LaTeX, and Github Actions.
 
+## About
+
+The goal of this repo is to eliminate the tedium of fine-tuning resume/CV documents whenever new information is added. My current CV may be downloaded [by clicking here!](https://github.com/ccbaumler/CV/releases/download/latest/default.docs.awesome-cv.pdf) Whenever and wherever I am, I will be able to update this document by updating the `data/data.r` file. The repo will do the rest.
+
+## How to use
+
 This CV repository may be updated here on GitHub or locally once pulled. Update
 by modifying:
 
