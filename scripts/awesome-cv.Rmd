@@ -43,12 +43,6 @@ source(file = here("data", "data.r"))
 
 ```
 
-# Research Interests
-
- * Bioinformatically exploring the world of big, public data in new and interesting ways.
- * Combining scientific domains to create a pleasant end-user experience.
- * I have overcome many obstacles to be where I am today and I am just happy to be here.
-
 # Education
 
 ```{r EDUCATION}
