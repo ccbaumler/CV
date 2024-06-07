@@ -146,7 +146,7 @@ honors %>%
 skills %>%
   detailed_entries(
     with = area,
-    why = skills
+    what = skills
   )
 
 ```
