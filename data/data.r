@@ -24,7 +24,7 @@ exp <- tribble(
 
 service <- tribble(
   ~area, ~accomplishment, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-  "Scholarly literature workshop Author and Lead instructor", "DataLab", 2024, "Present", NA, "University of California, Davis", NA,
+  "Scholarly Literature Workshop Author and Lead instructor", "DataLab", 2024, "Present", NA, "University of California, Davis", NA,
   "Admissions Committee Member", "PREP@UCD", 2023, "Present", NA, "University of California, Davis", NA,
   "Recruitment Colloquium Mentor", "BMCDB Graduate Group", 2020, "Present", NA, "University of California, Davis", NA,
   "Biology Graduate Admissions Pathways Mentor", "BioGAP", 2020, NA, 2021, "University of California, Davis", NA,
@@ -56,6 +56,7 @@ funds <- tribble(
 
 honors <- tribble(
   ~area, ~accomplishment, ~month, ~year, ~where, ~detail,
+  "Professors for the Future", "A competitive, leadership-development program", "May", 2024, "University of California, Davis", NA,
   "College of Biological Science’s Dean’s Mentorship Award", "In recognition of graduate students who have excelled in the mentorship of undergraduate students", "May", 2022, "University of California, Davis", NA,
   "NSF Graduate Research Fellowship Program (GRFP) Award", NA, "March", 2020, "University of California, Davis", NA,
   "NIH Undergraduate Preparation Fellowship (UPF) Award", NA, "March", 2020, "University of California, Davis", NA,
@@ -72,15 +73,18 @@ skills <- tribble(
   "Programming Languages", "BASH, R, JavaScript, Python, SQL",
   "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown",
   "Other Languages", "Snakemake",
-  "Version Control", "Git",
-  "Text Editors", "RStudio, VIM",
-  "Health and Safety", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified, Self-Defense Coordinator",
+  "Version Control", "Git/GitHub",
+  "Text Editors", "RStudio, VIM/NeoVim",
+  "Health and Safety", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified, Self-Defense Coordinator, Sexual Assault Victim Advocate (SAVA)",
   "Mechanical", "FCC GROL, Certified Aircraft Mechanic, Certified Automotive Mechanic",
 )
 
 presents <- tribble(
   ~area, ~accomplishment, ~year, ~where, ~detail,
-  "Relocation and the meaning of life", "Lecture to PREP on personal tips on moving across country for academia", "May 2022", "University of California, Davis", NA,
+  "My Successes and Failures of Grad School: How to Think like a Scientist", "A discussion to students about who can become a scientist", "June 2024", "University of California, Davis", NA,
+  "My Successes and Failures of Grad School: How to Think like a Scientist", "A discussion to students about who can become a scientist", "September 2023", "Concordia University, St.Paul", NA,
+  "Thoughts on academic writing: Emphasis on the GRFP", "A lecture on writing the NSF GRFP to IMSD students", "October 2022-23", "University of California, Davis", NA,
+  "Relocation and the meaning of life", "A lecture to PREP on personal tips on moving across country for academia", "May 2022", "University of California, Davis", NA,
   "Student Funding Panel", "A discussion to recruits about graduate student grants and funds", "February 2022", "University of California, Davis", NA,
   "Diversity, Equity, Inclusion Committee (DEIC) Gap Year Seminar", "A discussion to students on the impact of taking a gap year", "March 2021", "University of California, Davis", NA,
   "Diversity and Life Panel", "A discussion to recruits on life experience in graduate school", "March 2021", "University of California, Davis", NA,
