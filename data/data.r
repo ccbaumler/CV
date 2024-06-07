@@ -75,8 +75,9 @@ skills <- tribble(
   "Other Languages", "Snakemake",
   "Version Control", "Git/GitHub",
   "Text Editors", "RStudio, VIM/NeoVim",
-  "Health and Safety", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified, Self-Defense Coordinator, Sexual Assault Victim Advocate (SAVA)",
-  "Mechanical", "FCC GROL, Certified Aircraft Mechanic, Certified Automotive Mechanic",
+  "Health and Safety", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified",
+  "Health and Safety", "Self-Defense Coordinator, Sexual Assault Victim Advocate (SAVA)",
+  "Mechanics", "FCC GROL, Certified Aircraft Mechanic, Certified Automotive Mechanic",
 )
 
 presents <- tribble(
