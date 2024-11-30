@@ -79,7 +79,7 @@ exp %>%
 
 ```
 
-\pagebreak #preventing widows (last line of a paragraph alone on a new page) or orphans (first line of a paragraph alone at the bottom of a page)
+\pagebreak
 
 # Professional Service
 
