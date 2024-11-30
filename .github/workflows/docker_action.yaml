@@ -43,7 +43,7 @@ jobs:
           git commit -am "add the CV pdf files to the 'docs' directory of the repository"
           git push
      - name: Upload pdf file
-       uses: actions/upload-artifact@v1
+       uses: actions/upload-artifact@v4
        with:
          name: awesome-cv
          path: docs/
