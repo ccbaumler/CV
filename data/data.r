@@ -26,7 +26,7 @@ exp <- tribble(
 service <- tribble(
   ~area, ~accomplishment, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
   "Scholarly Literature Workshop Author and Lead instructor", "DataLab", 2024, "Present", NA, "University of California, Davis", NA,
-  "Gene Regulatory Networks for Development Teaching Assistant, "Marine Biology Laboratory", 2024, NA, NA, "University of Chicago", NA,
+  "Gene Regulatory Networks for Development Teaching Assistant", "Marine Biology Laboratory", 2024, NA, NA, "University of Chicago", NA,
   "Admissions Committee Member", "PREP@UCD", 2023, "Present", NA, "University of California, Davis", NA,
   "Recruitment Colloquium Mentor", "BMCDB Graduate Group", 2020, NA, 2024, "University of California, Davis", NA,
   "Biology Graduate Admissions Pathways Mentor", "BioGAP", 2020, NA, 2021, "University of California, Davis", NA,
