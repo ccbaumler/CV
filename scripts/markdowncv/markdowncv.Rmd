@@ -153,9 +153,7 @@ honors %>%
 skills %>%
   detailed_entries(
     with = where,
-    what = detail,
     why = skills,
-    when = year,
     where = area
   )
 

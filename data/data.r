@@ -72,14 +72,14 @@ honors <- tribble(
 
 skills <- tribble(
   ~area, ~skills,
-  "Programming Languages", "BASH, R, JavaScript, Python, SQL",
-  "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown",
-  "Other Languages", "Snakemake",
-  "Version Control", "Git/GitHub",
-  "Text Editors", "RStudio, VIM/NeoVim",
-  "Health", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified",
-  "Safety", "Self-Defense Coordinator, Sexual Assault Victim Advocate (SAVA)",
-  "Mechanics", "FCC GROL, Certified Aircraft Mechanic, Certified Automotive Mechanic",
+  "Programming Languages", "BASH, R, JavaScript, Python, SQL", "University of California, Davis",
+  "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown", "University of California, Davis",
+  "Other Languages", "Snakemake", "University of California, Davis",
+  "Version Control", "Git/GitHub", "University of California, Davis",
+  "Text Editors", "RStudio, VIM/NeoVim", "University of California, Davis",
+  "Health", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified", "United States Air Force",
+  "Safety", "Self-Defense Coordinator, Sexual Assault Victim Advocate (SAVA)", "United States Air Force",
+  "Mechanics", "FCC GROL, Certified Aircraft Mechanic, Certified Automotive Mechanic", "United States Air Force",
 )
 
 presents <- tribble(
