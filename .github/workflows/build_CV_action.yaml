@@ -46,14 +46,15 @@ jobs:
       # Step 6: Render the CV
       - name: Render CV
         run: |
-          Rscript -e 'rmarkdown::render("scripts/awesome-cv.Rmd", output_file = "../docs/awesome-cv.pdf")'
+          Rscript -e 'rmarkdown::render("scripts/awesome-cv/awesome-cv.Rmd", output_file = "../docs/colton-baumler.pdf")'
+          Rscript -e 'rmarkdown::render("scripts/markdowncv/markdowncv.Rmd", output_file = "../docs/colton-baumler.html")'
 
       # Step 7: Commit and push the rendered PDF
       - name: Commit and push CV
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add docs/awesome-cv.pdf
+          git add docs/colton-baumler.pdf docs/colton-baumler.html
           git commit -m "Update CV PDF"
           git push
 
@@ -61,5 +62,5 @@ jobs:
       - name: Upload CV PDF
         uses: actions/upload-artifact@v3
         with:
-          name: awesome-cv
-          path: docs/awesome-cv.pdf
+          name: colton-baumler-cvs
+          path: docs/colton-baumler.pdf, docs/colton-baumler.html
