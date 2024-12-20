@@ -46,8 +46,8 @@ jobs:
       # Step 6: Render the CV
       - name: Render CV
         run: |
-          Rscript -e 'rmarkdown::render("scripts/awesome-cv/awesome-cv.Rmd", output_file = "../docs/colton-baumler.pdf")'
-          Rscript -e 'rmarkdown::render("scripts/markdowncv/markdowncv.Rmd", output_file = "../docs/colton-baumler.html")'
+          Rscript -e 'rmarkdown::render("scripts/awesome-cv/awesome-cv.Rmd", output_file = "../../docs/colton-baumler.pdf")'
+          Rscript -e 'rmarkdown::render("scripts/markdowncv/markdowncv.Rmd", output_file = "../../docs/colton-baumler.html")'
 
       # Step 7: Commit and push the rendered PDF
       - name: Commit and push CV
