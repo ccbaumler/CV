@@ -71,7 +71,7 @@ honors <- tribble(
 )
 
 skills <- tribble(
-  ~area, ~skills,
+  ~area, ~skills, ~where,
   "Programming Languages", "BASH, R, JavaScript, Python, SQL", "University of California, Davis",
   "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown", "University of California, Davis",
   "Other Languages", "Snakemake", "University of California, Davis",
