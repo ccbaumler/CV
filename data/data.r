@@ -71,15 +71,15 @@ honors <- tribble(
 )
 
 skills <- tribble(
-  ~area, ~skills, ~where,
-  "Programming Languages", "BASH, R, JavaScript, Python, SQL", "University of California, Davis",
-  "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown", "University of California, Davis",
-  "Other Languages", "Snakemake", "University of California, Davis",
-  "Version Control", "Git/GitHub", "University of California, Davis",
-  "Text Editors", "RStudio, VIM/NeoVim", "University of California, Davis",
-  "Health", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified", "United States Air Force",
-  "Safety", "Self-Defense Coordinator, Sexual Assault Victim Advocate (SAVA)", "United States Air Force",
-  "Mechanics", "FCC GROL, Certified Aircraft Mechanic, Certified Automotive Mechanic", "United States Air Force",
+  ~area, ~skills, ~year, ~where, ~detail,
+  "Programming Languages", "BASH, R, JavaScript, Python, SQL", " ", "University of California, Davis", NA,
+  "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown", " ", "University of California, Davis", NA,
+  "Other Languages", "Snakemake", " ", "University of California, Davis", NA,
+  "Version Control", "Git/GitHub", " ", "University of California, Davis", NA,
+  "Text Editors", "RStudio, VIM/NeoVim", " ", "University of California, Davis", NA,
+  "Health", "Self-Aid Buddy Care (SABC), CPR Trained, AED Certified", " ", "United States Air Force", NA,
+  "Safety", "Self-Defense Coordinator, Sexual Assault Victim Advocate (SAVA)", " ", "United States Air Force", NA,
+  "Mechanics", "FCC GROL, Certified Aircraft Mechanic, Certified Automotive Mechanic", " ", "United States Air Force", NA,
 )
 
 presents <- tribble(

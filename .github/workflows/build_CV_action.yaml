@@ -64,3 +64,11 @@ jobs:
         with:
           name: colton-baumler-cvs
           path: docs/colton-baumler.pdf, docs/colton-baumler.html
+
+      # Optional Step 9: Create latest link
+      #- name: Create Tag and Release
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #    INPUT_FILE_NAME: docs/colton-baumler.pdf
+      #  run: |
+      #    bash ./entrypoint.sh 
