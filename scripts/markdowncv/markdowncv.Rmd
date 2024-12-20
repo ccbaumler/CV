@@ -51,7 +51,7 @@ packages <- c('vitae'     # The CV's LaTeX Template
 
 xfun::pkg_attach2(packages, message = FALSE)
 
-source(file = here("CV", "data.r"))
+source(file = here("data", "data.r"))
 
 ```
 
