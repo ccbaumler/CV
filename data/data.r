@@ -84,6 +84,7 @@ skills <- tribble(
 
 presents <- tribble(
   ~area, ~accomplishment, ~year, ~where, ~detail,
+  "The Modern, Practical Scholar Workshop Series", "An accessible, expanding, perpetual, and continuously updating workshop series focused on training scholars of all career stages in applied technology to streamline and improve their overall scholarship techniques", "2023-2025", "University of California, Davis", NA,
   "My Successes and Failures of Grad School: How to Think like a Scientist", "A discussion to students about who can become a scientist", "June 2024", "University of California, Davis", NA,
   "My Successes and Failures of Grad School: How to Think like a Scientist", "A discussion to students about who can become a scientist", "September 2023", "Concordia University, St.Paul", NA,
   "Thoughts on academic writing: Emphasis on the GRFP", "A lecture on writing the NSF GRFP to IMSD students", "October 2022-24", "University of California, Davis", NA,
