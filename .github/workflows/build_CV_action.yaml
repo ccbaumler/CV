@@ -36,7 +36,15 @@ jobs:
             texlive-latex-recommended \
             texlive-xetex \
             texlive-fonts-extra \
-            lmodern
+            modern
+
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.R
+          key: ${{ runner.os }}-R-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-R-
 
       # Step 5: Install R package dependencies
       - name: Install R packages
@@ -60,10 +68,10 @@ jobs:
 
       # Step 8: Upload the CV as an artifact
       - name: Upload CV PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: colton-baumler-cvs
-          path: 
+          path: |
             docs/colton-baumler.pdf
             docs/colton-baumler.html
 
@@ -74,3 +82,12 @@ jobs:
       #    INPUT_FILE_NAME: docs/colton-baumler.pdf
       #  run: |
       #    bash ./entrypoint.sh 
+
+      - name: Validate CV output
+        run: |
+          if [ ! -f "../docs/colton-baumler.pdf" ]; then
+            echo "PDF file not found!" && exit 1
+          fi
+          if [ ! -f "../docs/colton-baumler.html" ]; then
+            echo "HTML file not found!" && exit 1
+          fi
