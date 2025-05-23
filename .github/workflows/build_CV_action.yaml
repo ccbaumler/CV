@@ -84,9 +84,9 @@ jobs:
 
       - name: Validate CV output
         run: |
-          if [ ! -f "../docs/colton-baumler.pdf" ]; then
+          if [ ! -f "docs/colton-baumler.pdf" ]; then
             echo "PDF file not found!" && exit 1
           fi
-          if [ ! -f "../docs/colton-baumler.html" ]; then
+          if [ ! -f "docs/colton-baumler.html" ]; then
             echo "HTML file not found!" && exit 1
           fi
