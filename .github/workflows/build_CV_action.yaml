@@ -63,7 +63,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: colton-baumler-cvs
-          path: docs/colton-baumler.pdf, docs/colton-baumler.html
+          path: 
+            docs/colton-baumler.pdf
+            docs/colton-baumler.html
 
       # Optional Step 9: Create latest link
       #- name: Create Tag and Release
