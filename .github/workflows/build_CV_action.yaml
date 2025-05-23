@@ -35,9 +35,8 @@ jobs:
             texlive-latex-base \
             texlive-latex-recommended \
             texlive-xetex \
-            texlive-fonts-extra \
-            modern
-
+            texlive-fonts-extra 
+  
       - name: Cache R packages
         uses: actions/cache@v3
         with:
